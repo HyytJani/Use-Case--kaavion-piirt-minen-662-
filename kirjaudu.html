@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LISÄÄ UUSI ÄÄNESTYS</title>
+    <title>KIRJAUDU SISÄÄN</title>
     <link rel="stylesheet" href="tyylit/bootstrap.min.css">
 </head>
+<body class="container">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">ÄÄNESTYSSOVELLUS</a>
@@ -32,33 +33,22 @@
           <li class="nav-item">
             <a class="nav-link" href="poistaaanestys.html">Poista äänestyksiä</a>
           </li>
-         
         </ul>
-
       </div>
     </div>
-  </nav>
+  </nav>  
   
-  
-<Header class="container mt-5"><h4> LISÄÄ UUSI ÄÄNESTYS</h4></Header>
-<body class="container ">
+<Header class="container mt-5"><h4>KIRJAUDU SISÄÄN</h4></Header>
 
 <form action="" class="lomake  mt-5  " > 
-    <label for="aanestys">Anna äänestykselle otsikko:</label><br>
-  <input type="text" name="otsikko" class="form-control"><br> 
-    <label for="aanestys" > Kerro mistä äänestetään:</label><br>
-    <input type="text" name="aihe" class="form-control"><br>    
-    <label for="vaihtoehto">Syötä vaihtoehto: </label><br>
-    <input type="text" class="form-control" name="" id=""><br>
-    <label for="vaihtoehto">Syötä vaihtoehto: </label><br>
-    <input type="text" class="form-control" name="" id=""><br>
+    <label for="aanestys">Syötä käyttäjätunnus:</label><br>
+  <input type="text" name="kayttajatunnus" class="form-control"><br> 
+    <label for="aanestys" >Syötä salasana:</label><br>
+    <input type="password" name="salasana" class="form-control"><br>   
     
 </form>
-<button type="button" onclick="lisaaVaihtoehto()">LISÄÄ VAIHTOEHTO</button>
-<button type="button" onclick="tallenna()">TALLENNA ÄÄNESTYS</button>
-
-   
-</body>
+<button type="button" onclick="tallenna()">KIRJAUDU SISÄÄN</button>
 <script src="javascript/aanestys.js"></script>
 <script src="javascript/bundle.js"></script>
+</body>
 </html>

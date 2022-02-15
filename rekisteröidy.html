@@ -42,20 +42,21 @@
 <Header class="container mt-5"><h4>REKISTERÖIDY</h4></Header>
 <body class="container ">
 
-<form action="" class="lomake  mt-5  " > 
-    <label for="aanestys">Syötä käyttäjätunnus:</label><br>
+<form name="rekisteroidy" class="lomake  mt-5  " > 
+    <label for="username">Syötä käyttäjätunnus:</label><br>
   <input type="text" name="kayttajatunnus" class="form-control"><br> 
-    <label for="aanestys" >Syötä salasana:</label><br>
+    <label for="password" >Syötä salasana:</label><br>
     <input type="password" name="salasana" class="form-control"><br>    
-    <label for="vaihtoehto">Syötä salasana uudelleen: </label><br>
-    <input type="password" class="form-control" name="varmistus  " id=""><br>
-    
+    <label for="password">Syötä salasana uudelleen: </label><br>
+    <input type="password" name="varmistus" class="form-control"><br>
+    <button type="submit" >TALLENNA TIEDOT</button>
 </form>
 
-<button type="button" onclick="tallenna()">TALLENNA TIEDOT</button>
+
+<script src="javascript/rekisteroidy.js"></script>
+<script src="javascript/bundle.js"></script>
 
    
 </body>
-<script src="javascript/aanestys.js"></script>
-<script src="javascript/bundle.js"></script>
-</html><body></body> 
+
+</html>

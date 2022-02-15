@@ -43,19 +43,20 @@
 <Header class="container mt-5"><h4> LISÄÄ UUSI ÄÄNESTYS</h4></Header>
 <body class="container ">
 
-<form action="" class="lomake  mt-5  " > 
-    <label for="aanestys">Anna äänestykselle otsikko:</label><br>
+<form name="teeaanestys" > 
+    <div class="lomake" ><label for="aanestys">Anna äänestykselle otsikko:</label><br>
   <input type="text" name="otsikko" class="form-control"><br> 
     <label for="aanestys" > Kerro mistä äänestetään:</label><br>
     <input type="text" name="aihe" class="form-control"><br>    
     <label for="vaihtoehto">Syötä vaihtoehto: </label><br>
-    <input type="text" class="form-control" name="" id=""><br>
+    <input type="text" class="form-control" name="vaihtoehto" id=""><br>
     <label for="vaihtoehto">Syötä vaihtoehto: </label><br>
-    <input type="text" class="form-control" name="" id=""><br>
+    <input type="text" class="form-control" name="vaihtoehto" id=""><br></div>
+    <button type="button" onclick="lisaaVaihtoehto()">LISÄÄ VAIHTOEHTO</button>
+<button type="submit" >TALLENNA ÄÄNESTYS</button>
     
 </form>
-<button type="button" onclick="lisaaVaihtoehto()">LISÄÄ VAIHTOEHTO</button>
-<button type="button" onclick="tallenna()">TALLENNA ÄÄNESTYS</button>
+
 
    
 </body>

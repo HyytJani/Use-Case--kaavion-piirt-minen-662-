@@ -1,25 +1,26 @@
+
+const vaihtoehdot=[];
+
+
+
+
 document.forms['teeaanestys'].addEventListener('submit',lisaaAanestys)
 
-   function lisaaAanestys(event){
-      event.preventDefault();
-
+   function lisaaAanestys(event){   
+      event.preventDefault();  
 
       const otsikko=document.forms['teeaanestys']['otsikko'].value;
-      const aihe=document.forms['teeaanestys']['aihe'].value;
-      const vaihtoehto=document.forms['teeaanestys']['otsikko'].value;
-
-      const vaihtoehdot=[];
+      const vaihtoehto=document.forms['teeaanestys']['otsikko'].value;     
       const inputs=document.querySelectorAll('input');
 
       inputs.forEach(function(input){
          if(input.name.indexOf('vaihtoehto')==0){
-            vaihtoehdot.push(input.value);
-         }
+            vaihtoehdot.push(input.value); }
       })
-
-      console.log(otsikko,aihe,vaihtoehdot);
-      localStorage.setItem('aanestys',otsikko)
-      console.log(localStorage.getItem('aanestys'))
+      
+      localStorage.setItem(otsikko,JSON.stringify({vaihtoehdot:vaihtoehdot}))
+      document.forms['teeaanestys'].reset();
+     
    }
 
 

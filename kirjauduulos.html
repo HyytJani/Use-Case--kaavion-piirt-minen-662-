@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekisteröidy</title>
-    <link rel="stylesheet" href="tyylit/bootstrap.min.css">
-</head>
+    <title>ÄÄNESTYS SOVELLUS</title>
+   
+    <link href="tyylit/bootstrap.min.css" rel="stylesheet">
+    
+
+    <body class="container">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">ÄÄNESTYSSOVELLUS</a>
@@ -40,26 +43,15 @@
       </div>
     </div>
   </nav>
+  <H3 class="mt-5 text-center">HALUATKO KIRJAUTUA ULOS</H3>
+
+  <div class=" text-uppercase d-grid gap-2">
+     <button class="btn btn-lg btn-danger " type="click" id="ulos" onclick="ulos()">KYLLÄ</button>
+     <button class="btn btn-lg btn-primary " type="click" id="sisaan" onclick="sisaan()">EI</button></div>
   
-  
-<Header class="container mt-5"><h4>REKISTERÖIDY</h4></Header>
-<body class="container ">
+  <script src="javascript/ulos.js"></script>
+  <script src="javascript/bundle.js"></script>
 
-<form name="rekisteroidy" class="lomake  mt-5  " > 
-    <label for="username">Syötä käyttäjätunnus:</label><br>
-  <input type="text" name="kayttajatunnus" class="form-control"><br> 
-    <label for="password" >Syötä salasana:</label><br>
-    <input type="password" name="salasana" class="form-control"><br>    
-    <label for="password">Syötä salasana uudelleen: </label><br>
-    <input type="password" name="varmistus" class="form-control"><br>
-    <button type="submit" >TALLENNA TIEDOT</button>
-</form>
-
-
-<script src="javascript/rekisteroidy.js"></script>
-<script src="javascript/bundle.js"></script>
-
-   
+    
 </body>
-
 </html>

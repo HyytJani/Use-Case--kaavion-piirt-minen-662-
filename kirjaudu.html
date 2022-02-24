@@ -28,6 +28,9 @@
             <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="kirjauduulos.html">Kirjaudu ulos</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="teeaanestys.html">Lisää äänestyksiä</a>
           </li>
           <li class="nav-item">
@@ -38,15 +41,29 @@
     </div>
   </nav>  
   
-<Header class="container mt-5"><h4>KIRJAUDU SISÄÄN</h4></Header>
+<Header class="container mt-5"><h4>KIRJAUDU SISÄÄN</h4><p>(Jos sinulla ei ole tunnuksia, niin rekisteröidy ensin)</p></Header>
 
-<form name="kirjaudu" class="lomake  mt-5  " > 
+
+
+
+
+
+
+
+
+
+<form name="kirjaudu" class="lomake  mt-5 " > 
     <label for="kayttajatunnus">Syötä käyttäjätunnus:</label><br>
   <input type="text" name="kayttajatunnus" class="form-control"><br> 
     <label for="salasana" >Syötä salasana:</label><br>
     <input type="password" name="salasana" class="form-control"><br>   
     <button type="submit" >KIRJAUDU SISÄÄN</button>
 </form>
+<div class=" alert-dismissible alert-danger mt-5 ">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <h4 class="alert-heading alert-link " id="viesti"></h4>
+  
+</div>
 
 <script src="javascript/kirjaudu.js"></script>
 <script src="javascript/bundle.js"></script>

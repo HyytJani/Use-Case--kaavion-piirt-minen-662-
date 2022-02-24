@@ -27,36 +27,31 @@
             <a class="nav-link" href="kirjaudu.html">Kirjaudu sisään</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="kirjauduulos.html">Kirjaudu ulos</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="teeaanestys.html">Lisää äänestyksiä</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="poistaaanestys.html">Poista äänestyksiä</a>
-          </li>
-         
-        </ul>
-
+          </li></ul>
       </div>
     </div>
   </nav>
-  
-  
+    
 <Header class="container mt-5"><h4> LISÄÄ UUSI ÄÄNESTYS</h4></Header>
 <body class="container ">
 
-<form name="teeaanestys" > 
+<form name="teeaanestys" method="post" > 
     <div class="lomake" ><label for="aanestys">Anna äänestykselle otsikko:</label><br>
-  <input type="text" name="otsikko" class="form-control"><br> 
-   <label for="vaihtoehto">Syötä vaihtoehto: </label><br>
-    <input type="text" class="form-control" name="vaihtoehto" id=""><br>
+    <input type="text" name="otsikko" class="form-control"  required="required"  ><br> 
+    <label for="vaihtoehto" >Syötä vaihtoehto: </label><br>
+    <input type="text" class="form-control" name="vaihtoehto" id="" required="required"><br>
     <label for="vaihtoehto">Syötä vaihtoehto: </label><br>
-    <input type="text" class="form-control" name="vaihtoehto" id=""><br></div>
+    <input type="text" class="form-control" name="vaihtoehto" id="" required="required"><br></div>
     <button type="button" onclick="lisaaVaihtoehto()">LISÄÄ VAIHTOEHTO</button>
-<button type="submit" >TALLENNA ÄÄNESTYS</button>
-    
-</form>
-
-
-   
+<button type="submit" >TALLENNA ÄÄNESTYS</button>    
+</form>  
 </body>
 <script src="javascript/teeaanestys.js"></script>
 <script src="javascript/bundle.js"></script>

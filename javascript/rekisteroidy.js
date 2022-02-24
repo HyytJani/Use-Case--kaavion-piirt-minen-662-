@@ -1,6 +1,6 @@
-const kayttaja=[];
 
 
+const tunnukset=JSON.parse(localStorage.getItem('tunnukset'))||[];
 document.forms['rekisteroidy'].addEventListener('submit',rekisteroiUusiKayttaja);
 
     function rekisteroiUusiKayttaja(event){
@@ -25,7 +25,8 @@ document.forms['rekisteroidy'].addEventListener('submit',rekisteroiUusiKayttaja)
             return
         }
         
-        kayttaja.push({tunnus:username,sana:salasana})
-
-        console.log(kayttaja)
+        tunnukset.push({tunnus:username,sana:salasana})
+        localStorage.setItem('tunnukset',JSON.stringify(tunnukset))
+       
+        location.href='index.html'
      }
